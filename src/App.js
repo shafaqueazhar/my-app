@@ -1,25 +1,54 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import "./Fonts.css";
+import PortfolioWrapper from "./component/portfolio/PortfolioWrapper";
+import { Switch, Route, BrowserRouter, withRouter } from "react-router-dom";
+import DiceGame from "./component/scarne/DiceGame";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+            <PortfolioWrapper />
+          </Route>
+          <Route exact path="/dice">
+            <DiceGame />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
+
+
+//React - library or framework ? create react app ? 
+
+//Why react ? - 
+/*
+1) Easy to learn : Good amount of resources and materials. Lower learning curve.
+2) Resusable components : DRY - Less lines of code.
+3) High Performance : Virtual dom in react wich make it fast. DOM - change updates(render) everything.
+4) SEO - Search engine optimisation : SEO friendly.
+5) JEST - React si easy to test.
+
+Disadvantages : 
+1)The high pace of development : Class based, es6, Hooks.
+2) Poor documentation : 
+3) View(of MVC) : React work in view part and nothing else.
+
+npm install
+npm start
+
+<BrowserRouter>
+				<Switch>
+					<Route path='/book-interaction'>
+						<BookSession />
+					</Route>
+
+        
+
+*/

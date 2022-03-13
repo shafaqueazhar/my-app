@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Arcade";
+    src: url("./component/Fonts/ARCADE.TTF");
+}
+
+@font-face {
+    font-family:"Arcade-Classic";
+    src: url("./component/Fonts/ARCADECLASSIC.TTF");
+}
+
+@font-face {
+    font-family: "1982";
+    src: url("./component/Fonts/BACKTO1982.TTF");
+}
+
+@font-face {
+    font-family: "ka1";
+    src: url("./component/Fonts/ka1.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("./component/Fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("./component/Fonts/Poppins-Medium.ttf");
+}
